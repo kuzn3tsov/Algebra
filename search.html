@@ -16,11 +16,50 @@
             <input id="search" type="text" name="q">
             <button type="submit">Pretraži!</button>
         </form>
+        <hr>
         <h1>DuckDuckGo</h1>
         <form action="https://duckduckgo.com/" method="get">
             <label for="search">Što želite pronaći? </label>
             <input id="search" type="text" name="q">
             <button type="submit">Pretraži!</button>
         </form>
+        <hr>
+        <h1>Instrument cable search</h1>
+        <form action="https://www.thomann.de/intl/instrument_cables.html" method="get">
+            <div>
+                <label for="sort">Promijeni redoslijed prikazivanja</label>
+                <select name="oa" id="sort">
+                   <option value="" disabled selected>Odaberite opciju</option>
+                   <option value="smb">Popularnost</option>
+                   <option value="pra">Cijena (niska prvo)</option>
+                   <option value="prd">Cijena (visoka prvo)</option>
+                   <option value="ala">Abecedno (a-z)</option>
+                   <option value="ald">Abecedno (z-a)</option>
+                   <option value="rat">Najbolje ocijenjeni prvo</option>
+                   <option value="rel">Najnoviji prvo</option>
+                </select>
+            </div>
+            <div>
+                <label>Raspon cijena</label>
+                <input name="price-first" type="number" min="0" step="0.01">
+                <input name="price-last" type="number" max="500" step="0.01">
+            </div>
+            <div>
+                <label>Duljina kabla number</label>
+                <input name="feature-57478-first" type="number" min="0" step="0.1">
+                <input name="feature-57478-last" type="number" max="50" step="0.1">
+            </div>
+        
+            <div>
+                <label>Duljina kabla range</label>
+                <input name="feature-57478-first" type="range" min="0" step="0.1">
+                <input name="feature-57478-last" type="range" max="50" step="0.1">
+            </div>
+ 
+            <div>
+                <button type="submit">Pretraži!</button>
+            </div>
+        </form>
+        <hr>
     </body>
 </html>
