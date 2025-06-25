@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <title>Algebra Frontend edukacija - Početna stranica</title>
+        <!--Meta podaci za tražilice-->
+        <meta charset="UTF-8">
+        <meta name="description" content="HTML5 registracija Algebra Frontend edukacije">
+        <meta name="keywords" content="HTML5,Frontend">
+        <meta name="author" content="Lem Treursić">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Registracija</h1>
+        <form>            
+            <div>
+                <label>E-mail adresa <input type="email" name="mail" required></label>
+            </div>
+            <div>
+                <label>Lozinka <input minlength="8" pattern="/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/" type="password" name="lozinka" required></label>
+            </div>
+            <div>
+                <label>Korisničko ime <input type="text" name="username" required></label>
+            </div>
+            <div>
+                <label for="sort">Zemlja</label>
+                <select name="zemlja" id="sort">
+                   <option value="" disabled selected>Odaberite zemlju</option>
+                   <option value="hr">Hrvatska</option>
+                   <option value="ba">Bosna</option>
+                   <option value="sr">Srbija</option>
+                   <option value="cg">Crna gora</option>
+                   <option value="slo">Slovenija</option>
+                </select>
+            </div>
+            <div>
+                <label><input id="updates" type="checkbox" name="updates" value="true"> Želim primati informacije o nadogradnjama</label>
+            </div>
+            <div>
+                <button type="submit">Nastavi ></button>
+            </div>
+        </form>
+        <hr>
+    </body>
+</html>
