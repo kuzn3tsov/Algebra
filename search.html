@@ -41,21 +41,69 @@
             </div>
             <div>
                 <label>Raspon cijena</label>
-                <input name="price-first" type="number" min="0" step="0.01">
-                <input name="price-last" type="number" max="500" step="0.01">
+                <input name="price-first" type="number" min="0" step="0.01" required value="0">
+                <input name="price-last" type="number" max="500" step="0.01" required value="500">
             </div>
             <div>
                 <label>Duljina kabla number</label>
-                <input name="feature-57478-first" type="number" min="0" step="0.1">
-                <input name="feature-57478-last" type="number" max="50" step="0.1">
+                <input name="feature-57478-first" type="number" min="0" step="0.1" required value="0">
+                <input name="feature-57478-last" type="number" max="50" step="0.1" required value="50">
             </div>
-        
+            <!---
             <div>
                 <label>Duljina kabla range</label>
                 <input name="feature-57478-first" type="range" min="0" step="0.1">
                 <input name="feature-57478-last" type="range" max="50" step="0.1">
             </div>
- 
+             -->
+            <div>
+                <input id="dostupno" type="checkbox" name="vf" value="true">
+                <label for="dostupno">Dostupno</label>
+            </div>
+            <div>
+                <label><input type="checkbox" name="rating[]" value="5">5</label>
+                <label><input type="checkbox" name="rating[]" value="4">4</label>
+                <label><input type="checkbox" name="rating[]" value="3">3</label>
+                <label><input type="checkbox" name="rating[]" value="2">2</label>
+                <label><input type="checkbox" name="rating[]" value="1">1</label>
+            </div>
+            <div>
+                <label><input type="checkbox" name="feature-45225[]" value="Black">Black</label>
+                <label><input type="checkbox" name="feature-45225[]" value="Green">Green</label>
+                <label><input type="checkbox" name="feature-45225[]" value="Gold">Gold</label>
+                <label><input type="checkbox" name="feature-45225[]" value="Grey">Grey</label>
+                <label><input type="checkbox" name="feature-45225[]" value="Pink">Pink</label>
+            </div>
+            <div>
+                <button type="submit">Pretraži!</button>
+            </div>
+        </form>
+        <hr>
+        <form action="https://www.thomann.de/intl/dj_headphones.html" method="get">
+            <div>
+                <p>Replacable cable</p>
+                <label><input type="radio" name="feature-50881" value="true">Yes</label>
+                <label><input type="radio" name="feature-50881" value="false">No</label>
+            </div>
+            <div>
+                <label>Raspon cijena</label>
+                <input name="price-first" type="number" min="0" step="0.01" required value="0">
+                <input name="price-last" type="number" max="500" step="0.01" required value="500">
+            </div>
+             <div>
+                <input id="dostupno" type="checkbox" name="vf" value="true">
+                <label for="dostupno">Dostupno</label>
+            </div>
+            <div>
+                <label><input type="checkbox" name="rating[]" value="5">5</label>
+                <label><input type="checkbox" name="rating[]" value="4">4</label>
+                <label><input type="checkbox" name="rating[]" value="3">3</label>
+                <label><input type="checkbox" name="rating[]" value="2">2</label>
+                <label><input type="checkbox" name="rating[]" value="1">1</label>
+            </div>
+            <div>
+                <input type="reset">
+            </div>
             <div>
                 <button type="submit">Pretraži!</button>
             </div>
